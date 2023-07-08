@@ -1,0 +1,204 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width: 480px) {
+  .card:nth-child(7n + 1) {
+      grid-column: auto/span 2;
+      grid-row: auto/span 2;
+  }
+}
+
+.prompt::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+background-color: #1e1e1e;
+border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  font-family: "SF Pro Display", SF Pro Icons, Futura, Helvetica, Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #f5f5f7;
+} 
+
+.loader {
+  position: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeOut;
+}
+
+.section-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1;
+  min-height: 831px;
+}
+
+.section-title {
+  color: #E7C683;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+.section-logo {
+  width: 140px;
+}
+
+.section-text {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(180deg, #23f7f7, #0a06fb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 0.5px;
+  margin-top: 16px;
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.description {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.section-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.section-button {
+  background: #0071e3;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 400;
+  min-width: 28px;
+  padding: 8px 16px;
+  border-radius: 980px;
+  margin: 0 14px;
+}
+
+.section-link {
+  text-decoration: none;
+  color: #2997ff;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0 14px;
+  cursor: pointer;
+}
+
+.home-img {
+  margin-right: -390px;
+  height: 456px;
+  position: absolute;
+  bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+  color-scheme: dark;
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blue-gradient {
+  background: #0303fa;
+  background: linear-gradient(-90deg, #0303fa 0%, rgba(4, 213, 250, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #0303fa 0%,
+    rgba(167, 231, 242, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #fa69c8 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #fa69c8 97.5%);
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
